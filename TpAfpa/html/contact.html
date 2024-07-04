@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 user-scalable=no"
+    />
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <img src="../Images/logo.jpeg" alt="logo de l'Afpa" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="laFormation.html">La formation</a></li>
+          <li><a href="temoignages.html">Témoignages</a></li>
+          <li><a href="references.html">Références</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Contactez-nous</h1>
+     <form method="get" action=""> <!-- A REMPLIR !!!-->
+    </p>
+      <label for="inputPrenomNom" id="labelPrenomNom">Prénom Nom</label><input type="text" name="prénom_nom" id="inputPrenomNom" placeholder="John Doe">
+    </p>
+    <p>
+      <label for="inputAdresseMail" id="labelAdresseMail">Adresse mail</label><input type="email" name="adresseMail" id="inputAdresseMail" placeholder="John.doe@gmail.com">
+    </p>
+    <p>
+      <label for="inputTelephone" id="labelTelephone">Téléphone</label><input type="tel" name="Téléphone" id="inputTelephone" placeholder="07 08 09 10 11">
+    </p> 
+    <p>
+      Vous êtes
+      <input type="radio" name="Situation" id="inputDemandeurDemploi"><label for="inputDemandeurDemploi" id="labelDemandeurDemploi">Demandeur d'emploi</label>
+      <input type="radio" name="Situation" id="inputSalarieEnTransiPro"><label for="inputSalarieEnTransiPro" id="labelTransiPro">Salarié en transition pro</label>
+      <input type="radio" name="Situation" id="inputAutre"><label for="inputAutre" id="labelAutre">Autre</label>
+    </p>   
+    <p>
+      Vos modalités préférées
+      <input type="radio" name="modalité" id="inputPresentiel"><label for="inputPresentiel" id="labelAutreModa">Formation en présentiel</label>
+      <input type="radio" name="modalité" id="inputDistance"><label for="inputDistance" id="labelDistance">100% distance</label>
+      <input type="radio" name="modalité" id="inputAlternance"><label for="inputAlternance" id="labelAlternance">Alternance</label>
+      <input type="radio" name="modalité" id="inputPasdePref"><label for="inputPasdePref" id="labelnoPreference">Pas de préférence</label>
+    </p>
+    <p>
+      Vous êtes résident de 
+      <select name="region" id="chooseRegion">
+        <option value="">choisissez votre région</option>
+        <option value="AuvergneRhoneAlpes">Auvergne-Rhône-Alpes</option>
+        <option value="BourgogneFrancheComtee">Bourgogne-Franche-comtée</option>
+        <option value="Bretagne">Bretagne</option>
+      </select>
+    </p>
+    <p>
+       <input type="submit" name="envoyez" id="boutonEnvoyez" value="envoyez">
+    </p>
+    </form>
+    <footer>
+
+    </footer>
+  </body>
+
+</html>

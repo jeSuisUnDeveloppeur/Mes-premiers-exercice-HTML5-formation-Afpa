@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enquête ancien stagiaires</title>
+</head>
+<body>
+    <center>
+        <h1>Nous lançons une grande enquête sur les anciens stagiaires</h1>
+        <h4>merci de nous répondre</h4>
+    </center>
+    <form method="get" action="https://www.afpa.fr" >
+            <input type="text" name="le_Nom"id="Nom"placeholder="Nom"><label for="Nom">Votre nom</label><br/><br/>
+            <input type="text" name="le_prenom"id="prenom"placeholder="prénom"><label for="prenom">Votre prénom</label><br/><br/>
+            <input type="date" name="date_de_naissance"id="date_de_naissance"><label for="date_de_naissance">Votre date de naissance</label><br/><br/>
+            <input type="text" name="adresse"id="adresse"placeholder="numéro, rue"><label for="adresse">Votre adresse</label><br/><br/>
+            <input type="text" name="ville"id="ville"placeholder="ville"><label for="adresse">Votre ville</label><br/><br/>
+            <input type="number" name="code_postal"id="code_postal"placeholder="26400"><label for="code_postal">Votre code postal</label><br/><br/>
+            <input type="email" name="votre_email"id="email"placeholder="adressemail@blabla.fr"><label for="email">Votre E_mail</label><br/><br/>
+            <input type="radio" value="homme"id="men"name="sexe"><label for="men">Vous êtes un homme</label>
+            <input type="radio"value="femme" id="woman"name="sexe"><label for="woman">Vous êtes une femme</label><br/>
+            <select name="profession" id="menu_deroulant_profession">
+                <option value="Autre">Autre</option>
+                <option value="Developpeur">Developpeur</option>
+                <option value="Analyste">Analyste</option>
+                <option value="Chef de projet">Chef de projet</option>
+            </select><br/><br/>
+            <input type="text" name="precision_autre"disabled id="precision_autre"> <label for="precision_autre">Si vous avez répondu autre,précisez</label><br/><br/>
+            <select name="salaire" id="menu_deroulant_salaire">
+                <option value="1">< 1000€</option>
+                <option value="2">>1000€ et < 1500€ </option>
+                <option value="3">> 1500€ et < 2000€</option>
+                <option value="4">> 2000€</option>
+            </select><br/><br/>
+            <input type="date" name="annee_stage_Afpa"id="annee_stage"placeholder="aaaa"> <label for="annee_stage">En quelle année avez-vous suivi le stage AFPA ?</label><br/><br/>
+            <textarea rows="8" cols="30" >Vos Commentaires</textarea><br/>
+            <div><b>Merci d'avoir répondu au questionnaire</b></div>
+            <input type="submit"id="valider"name="Bouton_valider"value="Validez"><input type="reset"id="annuler"name="bouton_annuler"value="annulez">
+    </form>
+</body>
+</html>
